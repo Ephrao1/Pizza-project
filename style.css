@@ -1,0 +1,21 @@
+#home {
+    background-image: url("/images/main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+.logo1 {
+    width: 200px;
+    clip-path: circle();
+    padding-top: 5px;
+
+}
+.intro {
+    font-family: 'Style Script', cursive; 
+    font-size: 50px;
+}
+p {
+    font-family: 'Style Script', tangerine;
+}
