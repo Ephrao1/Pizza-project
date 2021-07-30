@@ -5,17 +5,31 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
+    padding-bottom: 8%;
+     background-color: rgba(0, 0, 0, 0.404);
+    background-blend-mode: hard-light;
 }
 .logo1 {
     width: 200px;
     clip-path: circle();
-    padding-top: 5px;
 
 }
 .intro {
     font-family: 'Style Script', cursive; 
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: bold;
+   color: white;
 }
-p {
+.lan {
     font-family: 'Style Script', tangerine;
+    font-size: 35px;
+    color: white;
+}
+.nxt {
+    width: 8%;
+    height: 30px;
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.583);
+    color: white;
+    border-radius: 5%;
 }
