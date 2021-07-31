@@ -1,3 +1,6 @@
+body {
+    margin: 0;
+}
 #home {
     background-image: url("/images/main.jpg");
     background-size: cover;
@@ -32,4 +35,143 @@
     background-color: rgba(0, 0, 0, 0.583);
     color: white;
     border-radius: 5%;
+}
+.btn1:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+.per {
+    width: 400px;
+    height: 200px;
+    float: left;
+    padding: 20px;
+}
+.about {
+    font-size: 18px;
+    text-align: center;
+}
+.head1 {
+    text-align: center;
+}
+
+#menu {
+    padding-top: 5%;
+    margin: 10px;
+    
+}
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    
+    
+}
+.slides {
+    width: 500%;
+    height: 900px;
+    display: flex;
+    
+}
+.slides input {
+    display: none;
+}
+.input {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    transform: translateX(0px);
+}
+.slides {
+    width: 20%;
+    transition: 2s;
+    width: 800px;
+    height: 500px;
+}
+.slides img {
+    width: 800px;
+    height: 500px;
+}
+
+.manual-btn {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #40d3dc;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #40d3dc;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #40d3dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #40d3dc;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #40d3dc;
+}
+@keyframes slide{
+    10%{
+        transform:translate(0);
+    }
+    15%, 30%{
+        transform:translate(-720px);
+    } 
+    35%, 50%{
+        transform:translate(-1440px);
+    }
+    55%, 70%{
+        transform:translate(-2160px);
+
+    }
+    75%, 90%{
+        transform:translate(0);
+    }
 }
