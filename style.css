@@ -62,16 +62,19 @@ body {
     
 }
 .slider {
-    width: 800px;
+    width: 100%;
     height: 500px;
     border-radius: 10px;
-    
+    padding-left: 20%;
+    background-color: rgba(0, 0, 0, 0.761);
+    background-blend-mode: soft-light;
     
 }
 .slides {
-    width: 500%;
+    width: 800%;
     height: 900px;
     display: flex;
+    overflow: hidden;
     
 }
 .slides input {
@@ -82,17 +85,21 @@ body {
     animation-duration: 10s;
     animation-name: slide;
     animation-iteration-count: infinite;
-    transform: translateX(0px);
+    
 }
 .slides {
     width: 20%;
     transition: 2s;
-    width: 800px;
-    height: 500px;
+    width: 720px;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    
 }
 .slides img {
-    width: 800px;
+    width: 720px;
     height: 500px;
+    display: block;
 }
 
 .manual-btn {
@@ -174,4 +181,71 @@ body {
     75%, 90%{
         transform:translate(0);
     }
+}
+#form {
+    width: 400px;
+    margin: 100px auto 
+}
+#orders{
+    padding-left: 43%;
+    padding-right: 43%;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.672);
+    width: 300px;
+    margin: 100px auto 0px auto;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+
+}
+.form-control{
+   /*change color of inputs*/
+    color: rgb(27, 26, 26);
+}
+#form input {
+    position: relative;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.534);
+    background-color: rgba(0, 0, 0, 0.705);
+    box-shadow: none;
+    text-align: center;
+    font-size: 18px;
+}
+form label{
+    padding-top: 10px;
+    color: white;
+    font-size: 25px;
+    display: block;
+    transition: 0.5s;
+    border-radius: 2px;
+    font-weight: bold;
+    padding-bottom: -1px;
+}
+select{
+    display: block !important;
+    position: relative;
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.699);
+    text-align: center;
+    font-size: 18px;
+    padding-right: 200px;
+}
+#split {
+    column-count: 2;
+
+}
+.btn {
+   /* style all buttons */
+    color: #fff;
+    background-color: #d19438 !important;
+    border-radius: 9px;
+    padding: 9px;
+    font-family: 'Concert One', cursive;
+    
+}
+.form-control{
+    font-size:16px;
 }
