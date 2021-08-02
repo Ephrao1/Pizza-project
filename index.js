@@ -194,5 +194,8 @@ function PlaceOrder(){
       function clearTextarea() {
         $("#messageForm").reset();
       }
+      let reset = function(){
+        location.reload();
+    } 
       
      
